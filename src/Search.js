@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import {FormGroup, FormControl} from 'react-bootstrap'
-import {trim} from './tools.ks'
+import {trim} from './tools.js'
 
 class Search extends Component{
   constructor(props){
