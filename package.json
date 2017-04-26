@@ -9,6 +9,7 @@
     "react-bootstrap": "^0.30.10",
     "react-dom": "^15.5.4",
     "react-fastclick": "^3.0.1",
+    "sinon": "^2.1.0",
     "superagent": "^3.5.2",
     "underscore": "^1.8.3"
   },
