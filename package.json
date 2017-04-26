@@ -3,9 +3,13 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "classnames": "^2.2.5",
     "react": "^15.5.4",
+    "react-bootstrap": "^0.30.10",
     "react-dom": "^15.5.4",
-    "react-bootstrap": "^0.30.10"
+    "react-fastclick": "^3.0.1",
+    "superagent": "^3.5.2",
+    "underscore": "^1.8.3"
   },
   "devDependencies": {
     "react-scripts": "0.9.5"

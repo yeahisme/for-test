@@ -3,6 +3,8 @@ import _ from 'underscore';
 import {formatDate} from './tools.js'
 import Progress from './Progress.js'
 import './Building.css'
+import initReactFastclick from 'react-fastclick';
+initReactFastclick();
 
 var colClass = "col-xs-3 Building-d";
 
@@ -50,7 +52,7 @@ class Building extends Component{
     return _.map(data,(item,index) => {
       var unfold = this.state.unfold.length && (_.indexOf(this.state.unfold, index)!== -1);
       return (
-        <div key={index} className="Building-item">
+        <div key={index} className="Building-item  well">
           <h3>{item.name}</h3> 
           <div className="row">
             <div className={colClass}>
@@ -72,12 +74,12 @@ class Building extends Component{
           </div>
           <Progress plan={item.plan_progress} real={item.real_progress} />
           {unfold
-            ?<div className="unfold" onClick={this.handleClick} data-key={index}>收起分部工程进度<br/><span className="Building-caret-up"></span></div>
-            :<div className="unfold" onClick={this.handleClick} data-key={index}>显示分部工程进度<br/><span className="Building-caret"></span></div>
+            ?<div className="Building-unfold" onClick={this.handleClick} data-key={index}>收起分部工程进度<br/><span className="Building-caret-up"></span></div>
+            :<div className="Building-unfold" onClick={this.handleClick} data-key={index}>显示分部工程进度<br/><span className="caret"></span></div>
           }
           <div className={unfold?"Building-parts show":"Building-parts hide"}>
             <h4>分布工程</h4> 
-            <ul>{parts(item.parts)}</ul>
+            <ul>{unfold?parts(item.parts):""}</ul>
           </div>
         </div>
       );
@@ -95,7 +97,7 @@ class Building extends Component{
   }
   render(){
     var buildingData =this.props.data;
-
+    if(this.props.search){}
 
 
     return (

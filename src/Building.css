@@ -2,10 +2,8 @@
 
 .Building-item{
   border-radius: 5px;
-  background-color: #f9f9f9;
   margin-bottom: 15px;
   position: relative;
-  padding: 0 5px 5px;
 }
 .Building-item h3{
   padding:10px 0 10px;
@@ -39,17 +37,17 @@
 }
 .Building-d div{
   color: #b6b6b6;
-  max-width: 60px;
-  margin:0 auto;
+  /*max-width: 60px;
+  margin:0 auto;*/
 }
 .Building-d p{
   color: #5a5d6c;
-  max-width: 60px;
   text-align: center;
-  margin:0 auto;
+  /*margin:0 auto;
+  max-width: 60px;*/
   font-size:12px;
 }
-.Buildingitem .row .Building-d:first-child div{
+/*.Buildingitem .row .Building-d:first-child div{
 
 }
 .Buildingitem .row .Building-d:first-child div,
@@ -62,15 +60,19 @@
 .Buildingitem .row .Building-d:last-child div,
 .Buildingitem .row .Building-d:last-child p{
   margin-right: 0;
-}
+}*/
 .Building-parts{
   padding:10px;
   background-color: #fff;
+  border-radius: 5px;
 
 }
 .Building-parts ul li{
   border-bottom:1px solid #f9f9f9;
   padding-bottom: 15px;
+}
+.Building-parts ul li:last-child{
+  border-bottom: 0;
 }
 
 .Building-caret-up {
@@ -94,8 +96,11 @@
   top: -5px;
 }
 /* Larger than mobile */
-@media (max-width: 359px) {
+@media (max-width: 375px) {
   .Building-d div,.Building-d p{
     font-size: 11px;
+  }
+  .Building-item.well{
+    padding:10px;
   }
 }
