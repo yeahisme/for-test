@@ -1,0 +1,101 @@
+.Building{}
+
+.Building-item{
+  border-radius: 5px;
+  background-color: #f9f9f9;
+  margin-bottom: 15px;
+  position: relative;
+  padding: 0 5px 5px;
+}
+.Building-item h3{
+  padding:10px 0 10px;
+  margin:0;
+  text-align: center;
+  font-size: 18px;
+}
+.Building-item h4{
+  padding:10px 0 0px;
+  margin:0;
+  text-align: center;
+  font-size: 16px;
+  color: #b6b6b6;
+}
+.Building-item ul, .Building-item li{
+  list-style: none;
+  margin:0;
+  padding:0;
+}
+.Building-item h5{
+  padding:20px 0 10px;
+  margin:0;
+  text-align: center;
+  font-size: 14px;
+}
+.Building-item .row{
+  margin-bottom: 10px;
+}
+.Building-d{
+  text-align: center;
+}
+.Building-d div{
+  color: #b6b6b6;
+  max-width: 60px;
+  margin:0 auto;
+}
+.Building-d p{
+  color: #5a5d6c;
+  max-width: 60px;
+  text-align: center;
+  margin:0 auto;
+  font-size:12px;
+}
+.Buildingitem .row .Building-d:first-child div{
+
+}
+.Buildingitem .row .Building-d:first-child div,
+.Buildingitem .row .Building-d:first-child p{
+  margin-left: 0;
+}
+.Buildingitem .row .Building-d:last-child div{
+
+}
+.Buildingitem .row .Building-d:last-child div,
+.Buildingitem .row .Building-d:last-child p{
+  margin-right: 0;
+}
+.Building-parts{
+  padding:10px;
+  background-color: #fff;
+
+}
+.Building-parts ul li{
+  border-bottom:1px solid #f9f9f9;
+  padding-bottom: 15px;
+}
+
+.Building-caret-up {
+  display: inline-block;
+  width: 0;
+  height: 0;
+  margin-left: 2px;
+  vertical-align: middle;
+  border-right: 4px solid transparent;
+  border-left: 4px solid transparent;
+  border-bottom: 4px dashed;
+  border-bottom: 4px solid \9;
+}
+.Building-unfold{
+  text-align: center;
+  background:transparent;
+  color: #b6b6b6;
+}
+.Building-unfold span{
+  position: relative;
+  top: -5px;
+}
+/* Larger than mobile */
+@media (max-width: 359px) {
+  .Building-d div,.Building-d p{
+    font-size: 11px;
+  }
+}
