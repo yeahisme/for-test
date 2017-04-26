@@ -1,0 +1,65 @@
+.Progress-bar{
+  position: relative;
+  height: 16px;
+  border-radius: 7px;
+  background-color: #eff2f3;
+  overflow: hidden;
+  width: 100%;
+  margin-bottom: 5px;
+}
+.Progress-real, .Progress-plan{
+  min-width: 96px !important;
+  color: #b6b6b6;
+  margin-bottom: 5px;
+}
+.Progress-real span, .Progress-plan span{
+  float: right;
+  color:#33475b;
+}
+.Progress-real span{
+  color: #3ca2e0;
+}
+.Progress-real:after, .Progress-plan:after{
+  display: block;
+  content:"";
+  clear: both;
+}
+
+.Progress-bar-real,
+.Progress-bar-plan{
+  position: absolute;
+  top:0;
+  left: 0;
+  width: 100%;
+  height: 16px;
+}
+.Progress-bar-plan {
+  background-color: #3ca2e0;
+}
+.Progress-bar-real{
+  background-color: #3ca2e0;
+}
+.Progress.less .Progress-bar-plan {
+  background-color:#33475b;
+}
+.Progress.less .Progress-bar-real{
+  background-color: #ea5745;
+  z-index:1;
+}
+.Progress.less .Progress-real span{
+  color:#ea5745;
+  z-index: 1;
+}
+
+.Progress.greater .Progress-bar-plan {
+  background-color:#33475b;
+  z-index:1;
+}
+.Progress.greater .Progress-bar-real{
+  background-color: #19c3a6;
+}
+.Progress.greater .Progress-real span{
+  color:#19c3a6;
+}
+
+
