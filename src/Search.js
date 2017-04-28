@@ -12,7 +12,7 @@ class Search extends Component{
   }
   render(){
     return(
-      <form>
+      <form onSubmit={(e)=>e.preventDefault()}>
         <FormGroup>
           <FormControl onChange={this.handleChange} type="text" className="gray" placeholder="搜索建筑物" />
         </FormGroup>
